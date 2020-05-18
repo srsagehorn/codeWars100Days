@@ -21,6 +21,7 @@ def is_uppercase(inp)
     # catch all, anything else, return false
     else:
         return False
+        
 
 is_uppercase("c") == False
 # is_uppercase("C") == True
@@ -28,3 +29,7 @@ is_uppercase("c") == False
 # is_uppercase("HELLO I AM DONALD") == True
 # is_uppercase("ACSKLDFJSgSKLDFJSKLDFJ") == False
 # is_uppercase("ACSKLDFJSGSKLDFJSKLDFJ") == True
+
+#edited faster
+#def is_uppercase(inp):
+#return True if inp.isupper() else False
