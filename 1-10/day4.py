@@ -16,7 +16,6 @@
 # 0 <= x <= 4
 # 0 <= y <= 4
 
-# Python
 
 def points(games):
     
@@ -29,3 +28,10 @@ def points(games):
             totalPoints +=1
         
     return totalPoints
+
+#Test.describe("Basic Tests")
+#Test.assert_equals(points(['1:0','2:0','3:0','4:0','2:1','3:1','4:1','3:2','4:2','4:3']), 30)
+#Test.assert_equals(points(['1:1','2:2','3:3','4:4','2:2','3:3','4:4','3:3','4:4','4:4']), 10)
+#Test.assert_equals(points(['0:1','0:2','0:3','0:4','1:2','1:3','1:4','2:3','2:4','3:4']), 0)
+#Test.assert_equals(points(['1:0','2:0','3:0','4:0','2:1','1:3','1:4','2:3','2:4','3:4']), 15)
+#Test.assert_equals(points(['1:0','2:0','3:0','4:4','2:2','3:3','1:4','2:3','2:4','3:4']), 12)
