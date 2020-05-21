@@ -1,6 +1,6 @@
 // Dubstep
 // 6kyu
-// Java
+// https://www.codewars.com/kata/551dc350bf4e526099000ae5/train/java
 
 // Polycarpus works as a DJ in the best Berland nightclub, and he often uses dubstep music in his performance. Recently, he has decided to take a couple of old songs and make dubstep remixes from them.
 
@@ -20,6 +20,14 @@
 
 public class Dubstep {
     public static String SongDecoder(String song) {
-        return song.replaceAll("(WUB)+", " ").trim(); // what does the "+" sign do?
+        return song.replaceAll("(WUB)+", " ").trim(); // rplace all WUBs with a space, then remove excess spaces
     }
 }
+
+// describe("Fixed tests", function(){
+//     it("It should pass fixed tests", function(){
+//       Test.assertEquals(songDecoder("AWUBBWUBC"), "A B C","WUB should be replaced by 1 space");
+//       Test.assertEquals(songDecoder("AWUBWUBWUBBWUBWUBWUBC"), "A B C","multiples WUB should be replaced by only 1 space");
+//       Test.assertEquals(songDecoder("WUBAWUBBWUBCWUB"), "A B C","heading or trailing spaces should be removed");
+//     });
+//   });

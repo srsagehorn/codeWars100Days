@@ -1,7 +1,6 @@
 # Is the string uppercase?
 # 8kyu
-# python
-# https://www.codewars.com/kata/56cd44e1aa4ac7879200010b
+# https://www.codewars.com/kata/56cd44e1aa4ac7879200010b/trian/python
 
 # Create a method is_uppercase() to see whether the string is ALL CAPS. For example:
 # is_uppercase("c") == False
@@ -30,6 +29,3 @@ is_uppercase("c") == False
 # is_uppercase("ACSKLDFJSgSKLDFJSKLDFJ") == False
 # is_uppercase("ACSKLDFJSGSKLDFJSKLDFJ") == True
 
-#edited faster
-#def is_uppercase(inp):
-#return True if inp.isupper() else False

@@ -1,6 +1,6 @@
 // Total amount of points
 // 8kyu
-// https://www.codewars.com/kata/5bb904724c47249b10000131
+// https://www.codewars.com/kata/5bb904724c47249b10000131/train/javascript
 
 // Our football team finished the championship. The result of each match look like "x:y". Results of all matches are recorded in the collection.
 
@@ -18,15 +18,19 @@
 // 0 <= y <= 4
 
 function points(games) {
+  // set variable for total points
   var totalPoints = 0;
 
+  // iterate over games
   for (var i = 0; i < games.length; i++) {
+    // set a varibale for the first and second character to make for easy referencing later
     var x = games[i].charAt(0),
       y = games[i].charAt(2);
-
+    // if first char is > second char add 3 points to total points
     if (x > y) {
       totalPoints += 3;
     }
+    // if first char is equal to second char add 1 point to total points
     if (x == y) {
       totalPoints += 1;
     }
