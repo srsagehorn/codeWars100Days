@@ -18,11 +18,18 @@
 # 1 Can you write a solution that will return null2 for both [] and [ x ] though? (This is an empty array and one with a single number and is not tested for, but you can write your own example test. )
 
 def first_non_consecutive(arr):
-for i in arr:
-    if i > 0 and arr[i] != arr[i-1] + 1:
-        return arr[i]
-return "None"
+    for i in arr:
+        if i > 0 and arr[i] != arr[i-1] + 1:
+            return arr[i]
+    return "None"
 
+# or
+# def first_non_consecutive(arr):
+#     firstNum = arr[0]
+#     for i in arr:
+#         if arr[i] - 1 != firstNum * i:
+#             return arr[i]
+#     return "None"
 
     Test.describe("Basic tests")
 Test.assert_equals(first_non_consecutive([1,2,3,4,6,7,8]), 6)
