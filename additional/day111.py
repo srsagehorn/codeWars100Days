@@ -19,9 +19,9 @@
 
 def first_non_consecutive(arr):
     for i in arr:
-        if i > 0 and arr[i] != arr[i-1] + 1:
+        if i < len(arr) and arr[i] != arr[i-1] + 1:
             return arr[i]
-    return "None"
+    return None
 
 # or
 # def first_non_consecutive(arr):
@@ -31,8 +31,8 @@ def first_non_consecutive(arr):
 #             return arr[i]
 #     return "None"
 
-    Test.describe("Basic tests")
-Test.assert_equals(first_non_consecutive([1,2,3,4,6,7,8]), 6)
+#     Test.describe("Basic tests")
+# Test.assert_equals(first_non_consecutive([1,2,3,4,6,7,8]), 6)
 # Test.assert_equals(first_non_consecutive([1,2,3,4,5,6,7,8]), None)
 # Test.assert_equals(first_non_consecutive([4,6,7,8,9,11]), 6)
 # Test.assert_equals(first_non_consecutive([4,5,6,7,8,9,11]), 11)
